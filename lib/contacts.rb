@@ -18,11 +18,7 @@ def remove_strawberry(contacts)
 contacts.each do |person,data|
   data.each do |attribute, data1|
     if attribute == :favorite_ice_cream_flavors
-      favorite_ice_cream flavors.each do |flavors|
-        if flavors == "stawberry"
-          flavors = null
-        end 
-      end
+     data1.delete_if {|icecream| icecreame == "strawberry"}
     end
   end 
 end 
